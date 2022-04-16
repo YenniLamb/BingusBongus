@@ -42,16 +42,16 @@ public class Spawner : MonoBehaviour
             //Debug.Log("object index:   " + objectsToSpawn[index].name); //print nets
             //Debug.Log("    Is pobject equal to string: " + objectsToSpawn[index].name.Equals("Nets"));
 
-            if (objectsToSpawn[index].name.Equals("Nets"))
+            if (objectsToSpawn[index].name.Equals("Nets1 Variant"))
             {
                 pipes.transform.position += Vector3.up * Random.Range(netsMinHeight, netsMaxHeight);
                 //Debug.Log("true");
             }
-            else if (objectsToSpawn[index].name.Equals("Pipes2 Variant"))
-            {
-                pipes.transform.position += Vector3.up * Random.Range(pipeMinHeight, pipeMaxHeight);
-               // Debug.Log("false");
-            }
+            //else if (objectsToSpawn[index].name.Equals("Pipes2 Variant"))
+            //{
+            //    pipes.transform.position += Vector3.up * Random.Range(pipeMinHeight, pipeMaxHeight);
+            //   // Debug.Log("false");
+            //}
         }
         //GameObject nets = Instantiate(prefab, transform.position, Quaternion.identity);
         //nets.transform.position += Vector3.up * Random.Range(minHeight, maxHeight);
